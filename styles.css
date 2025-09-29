@@ -83,8 +83,8 @@ body > :first-child {
 
 .our-services li img {
     width: 100%;
-    max-width: 220px;
-    height: 135px;
+    max-width: 250px;
+    height: 160px;
     object-fit: cover;
     border-radius: 10px;
     margin-top: auto;
