@@ -112,6 +112,10 @@ body > :first-child {
     margin-bottom: 0.5rem;
     font-size: 1.05rem;
 }
+footer a{
+    color: #70a9e2;
+    text-decoration: none;
+}
 
 /* Responsive Design */
 @media (max-width: 700px) {
