@@ -1,155 +1,223 @@
-body{
-    font-family:'Open Sans', sans-serif;
+/* Base */
+*, *::before, *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #eef5fc;
+    color: #1a2a3a;
 }
 
 /* Header */
-body > :first-child {
-    font-family:cursive;
-    font-size: 2.2rem;
-    color: #1976d2;
+.site-header {
     text-align: center;
-    margin: 2rem 0 1.5rem 0;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-.banner-img {
-    display: block;
-    width: 100vw;
-    height: 240px;
-    object-fit: cover;
-    object-position: center;
-    margin: 0 0 1.5rem 0;
-    background: #e3f2fd;
-    border-radius: 0 0 18px 18px;
-    box-shadow: 0 4px 24px rgba(33,150,243,0.07);
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    padding: 2.5rem 1rem 1.5rem;
 }
 
-/* Services Section */
+.site-header .eyebrow {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #5a8fc7;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.site-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    color: #1565c0;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.site-header .tagline {
+    font-size: 0.95rem;
+    color: #6a8db5;
+    margin-top: 0.5rem;
+}
+
+/* Banner */
+.banner-wrap {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(21, 101, 192, 0.35);
+    display: flex;
+    align-items: flex-end;
+    padding: 1.25rem 1.75rem;
+}
+
+.banner-overlay span {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Services */
 .our-services {
-    max-width: 100%;
-    margin: 2rem auto;
-    background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 4px 24px rgba(33,150,243,0.07);
-    padding: 2rem 2.5rem;
+    max-width: 1000px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+
+.our-services .sec-eyebrow {
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #5a8fc7;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
 }
 
 .our-services h2 {
-    color: #1976d2;
-    margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    color: #1565c0;
     text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
 }
 
 .our-services ul {
     list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1.25rem;
 }
 
 .our-services li {
-    background: #f7fbff;
-    border-radius: 14px;
-    box-shadow: 0 2px 8px rgba(33,150,243,0.08);
-    padding: 1.5rem 1rem 1rem 1rem;
-    width: 270px;
-    min-height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: box-shadow 0.2s;
-    position: relative;
-    color: #1976d2;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 0.5px solid #c5dcf5;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .our-services li:hover {
-    box-shadow: 0 8px 24px rgba(33,150,243,0.15);
-}
-
-.our-services li p {
-    color: #444;
-    font-size: 1.05rem;
-    margin: 1rem 0 1rem 0;
-    text-align: center;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(21, 101, 192, 0.12);
 }
 
 .our-services li img {
     width: 100%;
-    max-width: 250px;
-    height: 160px;
+    height: 170px;
     object-fit: cover;
-    border-radius: 10px;
-    margin-top: auto;
-    box-shadow: 0 2px 8px rgba(33,150,243,0.10);
+    display: block;
+}
+
+.card-body {
+    padding: 1.1rem 1rem 1.3rem;
+}
+
+.card-body h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    color: #1565c0;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.card-body p {
+    font-size: 0.875rem;
+    color: #5a7a9e;
+    line-height: 1.6;
 }
 
 /* Footer */
 .footer {
-    max-width: 900px;
-    margin: 2rem auto 1rem auto;
-    background: #e3f2fd;
-    border-radius: 14px;
-    padding: 1.5rem 2rem;
-    color: #1976d2;
-    box-shadow: 0 2px 8px rgba(33,150,243,0.07);
+    background: #1565c0;
+    padding: 2rem 1.5rem 1.5rem;
+    margin-top: 1rem;
 }
 
-.footer h2 {
+.footer-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.footer-col h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
     margin-bottom: 1rem;
-    font-size: 1.3rem;
 }
 
-.footer li {
-    list-style: none;
-    margin-bottom: 0.5rem;
-    font-size: 1.05rem;
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 0.6rem;
 }
-footer a{
-    color: #70a9e2;
+
+.footer-item svg {
+    width: 15px;
+    height: 15px;
+    color: rgba(255, 255, 255, 0.55);
+    flex-shrink: 0;
+}
+
+.footer-item a {
+    color: #90caf9;
     text-decoration: none;
 }
 
-/* Responsive Design */
-@media (max-width: 700px) {
-    .our-services ul {
-        flex-direction: column;
-        gap: 1.2rem;
-        align-items: center;
-    }
-    .our-services li {
-        width: 95%;
-        min-height: 260px;
-        padding: 1rem 0.5rem;
-    }
-    .our-services {
-        padding: 1rem 0.5rem;
-    }
-    .footer {
-        padding: 1rem 0.5rem;
-    }
-    body > :first-child {
-        font-size: 1.3rem;
-        margin: 1.2rem 0 1rem 0;
-    }
+.footer-item a:hover {
+    text-decoration: underline;
 }
 
-@media (max-width: 400px) {
-    .our-services li img {
-        max-width: 100px;
-        height: 70px;
-    }
+.footer-copy {
+    grid-column: 1 / -1;
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.35);
+    padding-top: 1rem;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.12);
 }
-/* Responsive banner height */
+
+/* Responsive */
 @media (max-width: 700px) {
-    .banner-img {
-        height: 120px;
+    .site-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-wrap {
+        height: 140px;
+    }
+
+    .banner-overlay span {
+        font-size: 1.1rem;
+    }
+
+    .our-services ul {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr;
     }
 }
