@@ -4,38 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tenaj's Sparkle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>Tenaj's Sparkle laundry services</header>
-    <img class="banner-img" src="images/banner.png" alt="">
+
+    <header class="site-header">
+        <p class="eyebrow">Nairobi's trusted laundry</p>
+        <h1>Tenaj's Sparkle</h1>
+        <p class="tagline">Professional laundry services, right at your doorstep</p>
+    </header>
+
+    <div class="banner-wrap">
+        <img class="banner-img" src="images/banner.png" alt="Tenaj's Sparkle laundry services">
+        <div class="banner-overlay"><span></span></div>
+    </div>
+
     <div class="our-services">
+        <p class="sec-eyebrow">What we offer</p>
         <h2>Our Services</h2>
         <ul>
-            <li class="wash">Wash and Fold
-                <p>Freshly Washed, Expertly Folded, Ready for You!</p>
-                <img src="images/ad3346ab92dcf0ff4e7636c8fffef1dc.jpg" alt="">
+            <li class="wash">
+                <img src="images/ad3346ab92dcf0ff4e7636c8fffef1dc.jpg" alt="Wash and Fold">
+                <div class="card-body">
+                    <h3>Wash and Fold</h3>
+                    <p>Freshly Washed, Expertly Folded, Ready for You!</p>
+                </div>
             </li>
-            <li class="duvet">Duvet
-                <p>Fluffy and Fresh Duvet Cleaning Services at Affordable Prices.</p>
-                <img src="images/fe4875efde93209dd7fba999988c9682.jpg" alt="">
+            <li class="duvet">
+                <img src="images/fe4875efde93209dd7fba999988c9682.jpg" alt="Duvet cleaning">
+                <div class="card-body">
+                    <h3>Duvet</h3>
+                    <p>Fluffy and Fresh Duvet Cleaning Services at Affordable Prices.</p>
+                </div>
             </li>
-            <li class="iron">Ironing
-                <p>Look Your Best with Our Professional Ironing Service.</p>
-                <img src="images/How to Clean an Ironing Board _ Get Set Clean _ Get Set Clean.jpeg" alt="">
+            <li class="iron">
+                <img src="images/How to Clean an Ironing Board _ Get Set Clean _ Get Set Clean.jpeg" alt="Ironing">
+                <div class="card-body">
+                    <h3>Ironing</h3>
+                    <p>Look Your Best with Our Professional Ironing Service.</p>
+                </div>
             </li>
-            <li class="pick-deliver">Pickup and Delivery
-                <p>Convenient Laundry Pickup and Delivery at Your Doorstep.</p>
-                <img src="images/Search For The Best Laundromat Georgetown KY.jpeg" alt="">
+            <li class="stain-removal">
+                <img src="Images/close-up-wine-stain-detail.jpg" alt="Stain Removal">
+                <div class="card-body">
+                    <h3>Stain Removal</h3>
+                    <p>Expert Stain Removal Services for All Types of Fabrics.</p>
+                </div>
+            </li>
+            <li class="home-cleaning">
+                <img src="Images/still-life-cleaning-tools.jpg" alt="Home Cleaning">
+                <div class="card-body">
+                    <h3>Home Cleaning</h3>
+                    <p>Professional Home Cleaning Services for a Spotless Environment.</p>
+                </div>
+            </li>
+            <li class="pick-deliver">
+                <img src="images/Search For The Best Laundromat Georgetown KY.jpeg" alt="Pickup and Delivery">
+                <div class="card-body">
+                    <h3>Pickup and Delivery</h3>
+                    <p>Convenient Laundry Pickup and Delivery at Your Doorstep.</p>
+                </div>
             </li>
         </ul>
     </div>
-    <div class="footer">
-        <h2 class="contact">Contact Us:</h2>
-        <li class="email">Email at: tenajssparkle@gmil.com</li>
-        <li class="call">Call on: +254 718 178 421</li>
-        <li class="whatsapp">WhatsApp now: 0718 178 421</li>
-        <li class="facebook">Facebook: <a href="https://www.facebook.com/search/top/?q=Tenaj%27s%20Sparkle">Tenaj's Sparkle</a></li>
-    </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h2>Contact Us</h2>
+                <p class="footer-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    tenajssparkle@gmail.com
+                </p>
+                <p class="footer-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 11.45 19a19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 3.1 4.18 2 2 0 0 1 5.08 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L9.09 10a16 16 0 0 0 6 6l1.19-1.19a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 23 16.92z"/></svg>
+                    +254 718 178 421
+                </p>
+                <p class="footer-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                    WhatsApp: 0718 178 421
+                </p>
+            </div>
+            <div class="footer-col">
+                <h2>Find Us</h2>
+                <p class="footer-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    <a href="https://www.facebook.com/search/top/?q=Tenaj%27s%20Sparkle">Tenaj's Sparkle on Facebook</a>
+                </p>
+            </div>
+            <p class="footer-copy">© 2026 Tenaj's Sparkle Laundry Services</p>
+        </div>
+    </footer>
+
 </body>
 </html>
