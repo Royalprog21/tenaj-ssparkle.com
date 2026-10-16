@@ -110,14 +110,9 @@
         </ul>
     </div>
 
-    <section class="reviews" id="reviews">
+<section class="reviews" id="reviews">
     <p class="sec-eyebrow">Testimonials</p>
     <h2>Customer Reviews</h2>
-    <p class="reviews-summary" id="reviews-summary"></p>
-
-    <div class="reviews-list" id="reviews-list" aria-live="polite">
-        <p class="reviews-empty">Loading reviews…</p>
-    </div>
 
     <form class="review-form" id="review-form">
         <h3>Leave a review</h3>
@@ -148,12 +143,17 @@
         <label for="r-comment">Your review</label>
         <textarea id="r-comment" maxlength="500" rows="4" required></textarea>
 
-        <!-- honeypot: bots fill this, humans never see it -->
         <input type="text" id="r-website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 
         <button type="submit" id="r-submit">Submit review</button>
         <p class="form-msg" id="form-msg" role="status"></p>
     </form>
+
+    <p class="reviews-summary" id="reviews-summary"></p>
+
+    <div class="reviews-list" id="reviews-list" aria-live="polite">
+        <p class="reviews-empty">Loading reviews…</p>
+    </div>
 </section>
 
     </main>
