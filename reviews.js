@@ -98,7 +98,8 @@ form.addEventListener('submit', async e => {
     if (!res.ok) throw new Error();
     localStorage.setItem('lastReview', Date.now());
     form.reset();
-    msgEl.textContent = 'Thank you! Your review will appear once approved.';
+    msgEl.textContent = 'Thank you! Your review has been posted.';
+    loadReviews();
     } catch {
     msgEl.textContent = 'Something went wrong. Please try again.';
     } finally {
