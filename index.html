@@ -110,6 +110,52 @@
         </ul>
     </div>
 
+    <section class="reviews" id="reviews">
+    <p class="sec-eyebrow">Testimonials</p>
+    <h2>Customer Reviews</h2>
+    <p class="reviews-summary" id="reviews-summary"></p>
+
+    <div class="reviews-list" id="reviews-list" aria-live="polite">
+        <p class="reviews-empty">Loading reviews…</p>
+    </div>
+
+    <form class="review-form" id="review-form">
+        <h3>Leave a review</h3>
+
+        <label for="r-name">Your name</label>
+        <input type="text" id="r-name" maxlength="60" required>
+
+        <label for="r-service">Service</label>
+        <select id="r-service" required>
+            <option value="">Select a service</option>
+            <option>Wash and Fold</option>
+            <option>Duvet</option>
+            <option>Ironing</option>
+            <option>Stain Removal</option>
+            <option>Home Cleaning</option>
+            <option>Pickup and Delivery</option>
+        </select>
+
+        <label>Rating</label>
+        <div class="star-input">
+            <input type="radio" name="rating" id="s5" value="5" required><label for="s5" title="5 stars">★</label>
+            <input type="radio" name="rating" id="s4" value="4"><label for="s4" title="4 stars">★</label>
+            <input type="radio" name="rating" id="s3" value="3"><label for="s3" title="3 stars">★</label>
+            <input type="radio" name="rating" id="s2" value="2"><label for="s2" title="2 stars">★</label>
+            <input type="radio" name="rating" id="s1" value="1"><label for="s1" title="1 star">★</label>
+        </div>
+
+        <label for="r-comment">Your review</label>
+        <textarea id="r-comment" maxlength="500" rows="4" required></textarea>
+
+        <!-- honeypot: bots fill this, humans never see it -->
+        <input type="text" id="r-website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <button type="submit" id="r-submit">Submit review</button>
+        <p class="form-msg" id="form-msg" role="status"></p>
+    </form>
+</section>
+
     </main>
 
     <footer class="footer">
@@ -144,4 +190,7 @@
     </a>
 
 </body>
+
+    <script src="reviews.js"></script>
+
 </html>
